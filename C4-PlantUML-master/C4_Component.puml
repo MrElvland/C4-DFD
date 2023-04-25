@@ -14,9 +14,9 @@
 ' ##################################
 
 'new'
-!$DB_FONT_COLOR ?= "#000000"
-!$DB_BG_COLOR ?= "#FFFFFF"
-!$DB_BORDER_COLOR ?= "#FFFFFF"
+!$testing_FONT_COLOR ?= "#000000"
+!$testing_BG_COLOR ?= "#FFFFFF"
+!$testing_BORDER_COLOR ?= "#FFFFFF"
 
 !$COMPONENT_FONT_COLOR ?= "#000000"
 !$COMPONENT_BG_COLOR ?= "#85BBF0"
@@ -30,7 +30,7 @@
 ' ##################################
 
 'new'
-UpdateElementStyle("db", $DB_BG_COLOR, $DB_FONT_COLOR, $DB_BORDER_COLOR)
+UpdateElementStyle("testing", $testing_BG_COLOR, $testing_FONT_COLOR, $testing_BORDER_COLOR)
 
 
 UpdateElementStyle("component", $COMPONENT_BG_COLOR, $COMPONENT_FONT_COLOR, $COMPONENT_BORDER_COLOR)
@@ -46,13 +46,13 @@ UpdateElementStyle("external_component", $EXTERNAL_COMPONENT_BG_COLOR, $EXTERNAL
 
 'new'
 !unquoted procedure AddComponentTag($tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="")
-  $addElementTagInclReuse("db", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $techn, $legendText, $legendSprite)
+  $addElementTagInclReuse("testing", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $techn, $legendText, $legendSprite)
 !endprocedure
 
 ' Layout
 ' ##################################
 
-SetDefaultLegendEntries("db\nperson\nsystem\ncontainer\ncomponent\nexternal_person\nexternal_system\nexternal_container\nexternal_component\nenterprise_boundary\nsystem_boundary\ncontainer_boundary\nboundary")
+SetDefaultLegendEntries("testing\nperson\nsystem\ncontainer\ncomponent\nexternal_person\nexternal_system\nexternal_container\nexternal_component\nenterprise_boundary\nsystem_boundary\ncontainer_boundary\nboundary")
 
 !procedure LAYOUT_WITH_LEGEND()
 hide stereotype
@@ -63,7 +63,7 @@ legend right
 |<$CONTAINER_BG_COLOR> container |
 |<$COMPONENT_BG_COLOR> component |
 'new'
-|<$DB_BG_COLOR> db |
+|<$testing_BG_COLOR> testing |
 |<$EXTERNAL_PERSON_BG_COLOR> external person |
 |<$EXTERNAL_SYSTEM_BG_COLOR> external system |
 |<$EXTERNAL_CONTAINER_BG_COLOR> external container |
@@ -79,10 +79,10 @@ endlegend
 !endfunction
 
 'new'
-!unquoted procedure Db($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
-!$sprite=$toElementArg("$sprite", $tags, "ElementTagSprite", "db")
-!$techn=$toElementArg($techn, $tags, "ElementTagTechn", "db")
-rectangle "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("db",$tags) as $alias $getLink($link)
+!unquoted procedure testing($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg("$sprite", $tags, "ElementTagSprite", "testing")
+!$techn=$toElementArg($techn, $tags, "ElementTagTechn", "testing")
+rectangle "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("testing",$tags) as $alias $getLink($link)
 !endprocedure
 
 
@@ -92,7 +92,7 @@ rectangle "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos
 rectangle "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("component",$tags) as $alias $getLink($link)
 !endprocedure
 
-!unquoted procedure ComponentDb($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
+!unquoted procedure Componenttesting($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
 !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "component")
 !$techn=$toElementArg($techn, $tags, "ElementTagTechn", "component")
 database "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("component",$tags) as $alias $getLink($link)
@@ -110,7 +110,7 @@ queue "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("co
 rectangle "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("external_component",$tags) as $alias $getLink($link)
 !endprocedure
 
-!unquoted procedure ComponentDb_Ext($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
+!unquoted procedure Componenttesting_Ext($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
 !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "external_component")
 !$techn=$toElementArg($techn, $tags, "ElementTagTechn", "external_component")
 database "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("external_component",$tags) as $alias $getLink($link)
