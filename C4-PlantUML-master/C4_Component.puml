@@ -15,7 +15,7 @@
 
 'new'
 !$testing_FONT_COLOR ?= "#00FF00"
-!$testing_BG_COLOR ?= "#FF18FF"
+!$testing_BG_COLOR ?= "#a18da1"
 !$testing_BORDER_COLOR ?= "#FFFFFF"
 
 !$COMPONENT_FONT_COLOR ?= "#000000"
