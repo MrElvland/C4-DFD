@@ -75,6 +75,13 @@ endlegend
 rectangle "$getContainer($label, $techn, $descr, $sprite)$getProps()" $toStereos("container", $tags) as $alias $getLink($link)
 !endprocedure
 
+!unquoted procedure testing($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "container")
+!$techn=$toElementArg($techn, $tags, "ElementTagTechn", "container")
+rectangle "$getContainer($label, $techn, $descr, $sprite)$getProps()" $toStereos("container", $tags) as $alias $getLink($link)
+!endprocedure
+
+
 !unquoted procedure ContainerDb($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
 !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "container")
 !$techn=$toElementArg($techn, $tags, "ElementTagTechn", "container")
