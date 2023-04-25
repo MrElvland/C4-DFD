@@ -83,7 +83,7 @@ endlegend
 
 'new'
 !unquoted procedure Testing($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
-!$sprite=$toElementArg("$sprite", $tags, "ElementTagSprite", "component")
+!$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "component")
 !$techn=$toElementArg($techn, $tags, "ElementTagTechn", "component")
 rectangle "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("testing",$tags) as $alias $getLink($link)
 !endprocedure
