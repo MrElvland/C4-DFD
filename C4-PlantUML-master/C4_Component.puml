@@ -12,6 +12,9 @@
 
 ' Colors
 ' ##################################
+!$testing_FONT_COLOR ?= "#000000"
+!$testing_BG_COLOR ?= "#FFFFFF"
+!$testing_BORDER_COLOR ?= "#78A8D8"
 
 !$COMPONENT_FONT_COLOR ?= "#000000"
 !$COMPONENT_BG_COLOR ?= "#85BBF0"
@@ -38,7 +41,7 @@ UpdateElementStyle("external_component", $EXTERNAL_COMPONENT_BG_COLOR, $EXTERNAL
 ' Layout
 ' ##################################
 
-SetDefaultLegendEntries("person\nsystem\ncontainer\ncomponent\nexternal_person\nexternal_system\nexternal_container\nexternal_component\nenterprise_boundary\nsystem_boundary\ncontainer_boundary\nboundary")
+SetDefaultLegendEntries("DB\nperson\nsystem\ncontainer\ncomponent\nexternal_person\nexternal_system\nexternal_container\nexternal_component\nenterprise_boundary\nsystem_boundary\ncontainer_boundary\nboundary")
 
 !procedure LAYOUT_WITH_LEGEND()
 hide stereotype
