@@ -61,7 +61,7 @@ With the two macros `LAYOUT_TOP_DOWN()` and `LAYOUT_LEFT_RIGHT()` it is possible
 
 ```plantuml
 @startuml LAYOUT_TOP_DOWN Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 /' Not needed because this is the default '/
 LAYOUT_TOP_DOWN()
@@ -83,7 +83,7 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 
 ```plantuml
 @startuml LAYOUT_LEFT_RIGHT Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 LAYOUT_LEFT_RIGHT()
 
@@ -104,7 +104,7 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 
 ```plantuml
 @startuml LAYOUT_LANDSCAPE Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 LAYOUT_LANDSCAPE()
 
@@ -145,7 +145,7 @@ This can be enabled with `LAYOUT_WITH_LEGEND()`.
 
 ```plantuml
 @startuml LAYOUT_WITH_LEGEND Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 LAYOUT_WITH_LEGEND()
 
@@ -178,7 +178,7 @@ The calculated legend has following differences:
 
 ```plantuml
 @startuml SHOW_LEGEND Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 Person(admin, "Administrator")
 System_Boundary(c1, 'Sample') {
@@ -203,7 +203,7 @@ Legend labels and details can be defined via `\n` in `$legendTest` arguments too
 !if %variable_exists("RELATIVE_INCLUDE")
   !include %get_variable_value("RELATIVE_INCLUDE")/C4_Container.puml
 !else
-  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+  !include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 !endif
 ' $legendText with \n defines the label and details of the legend entry ("backend container" is label, "eight sided shape" is details) 
 AddElementTag("backendContainer", $fontColor=$ELEMENT_FONT_COLOR, $bgColor="#335DA5", $shape=EightSidedShape(), $legendText="backend container\neight sided shape")
@@ -235,7 +235,7 @@ Legend details can be deactivated via `SHOW_LEGEND($details=None())`
 !if %variable_exists("RELATIVE_INCLUDE")
   !include %get_variable_value("RELATIVE_INCLUDE")/C4_Container.puml
 !else
-  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+  !include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 !endif
 ' $legendText with \n defines the label and details of the legend entry ("backend container" is label, "eight sided shape" is details) 
 AddElementTag("backendContainer", $fontColor=$ELEMENT_FONT_COLOR, $bgColor="#335DA5", $shape=EightSidedShape(), $legendText="backend container\neight sided shape")
@@ -265,7 +265,7 @@ SHOW_LEGEND($details=None())
 
 ```plantuml
 @startuml Layout With Whitespace Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 Person(a, "Person A")
 Container(b, "Container B", "techn")
@@ -291,7 +291,7 @@ Therefore a floating legend can be added via SHOW_FLOATING_LEGEND(), positioned 
 
 ```plantuml
 @startuml Compact Legend Layout Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 Person(a, "Person A")
 Container(b, "Container B", "techn")
@@ -327,7 +327,7 @@ With `LAYOUT_AS_SKETCH()` you can make a difference.
 
 ```plantuml
 @startuml LAYOUT_AS_SKETCH Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 LAYOUT_AS_SKETCH()
 
@@ -355,7 +355,7 @@ PNG does not support fallback fonts based on a PlantUML [bug](https://forum.plan
 
 ```plantuml
 @startuml LAYOUT_AS_SKETCH Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 SET_SKETCH_STYLE($bgColor="lightblue", $fontColor="darkblue", $warningColor="darkred", $footerWarning="Sketch", $footerText="Created for discussion")
 
@@ -401,7 +401,7 @@ This can be enabled with `HIDE_STEREOTYPE()`.
 
 ```plantuml
 @startuml HIDE_STEREOTYPE Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 HIDE_STEREOTYPE()
 
@@ -432,7 +432,7 @@ With the macros `HIDE_PERSON_SPRITE()`, `SHOW_PERSON_SPRITE()` and `SHOW_PERSON_
 
 ```plantuml
 @startuml predefined sprites Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 Person(userA, "User A", "with predefined sprite person", "person")
 Person(userB, "User B", "with predefined sprite person2", "person2")
@@ -445,7 +445,7 @@ Person(userB, "User B", "with predefined sprite person2", "person2")
 
 ```plantuml
 @startuml HIDE_PERSON_SPRITE Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 HIDE_PERSON_SPRITE()
 
@@ -466,7 +466,7 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 
 ```plantuml
 @startuml SHOW_PERSON_SPRITE Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 /' Not needed because this is the default with sprite "person" '/
 SHOW_PERSON_SPRITE()
@@ -488,7 +488,7 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 
 ```plantuml
 @startuml SHOW_PERSON_SPRITE(sprite) Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 !define osaPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-opensecurityarchitecture2-icons/master
 !include osaPuml/Common.puml
 !include osaPuml/User/all.puml
@@ -512,7 +512,7 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 
 ```plantuml
 @startuml SHOW_PERSON_PORTRAIT() Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 SHOW_PERSON_PORTRAIT()
 
@@ -538,7 +538,7 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 
 ```plantuml
 @startuml SHOW_PERSON_OUTLINE() Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 SHOW_PERSON_OUTLINE()
 

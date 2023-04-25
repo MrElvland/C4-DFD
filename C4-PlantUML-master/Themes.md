@@ -25,14 +25,14 @@ Similar to PlantUML themes supports C4-PlantUML `C4_...` specific themes too (so
 
 Additional to the standard themes with skinparam and style definitions requires C4-PlantUML corresponding variable definitions.
 Therefore we started with the convention that all C4-PlantUML compatible themes start with `C4_...` in the name
-(e.g. theme [`C4_united`](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes/puml-theme-C4_united.puml)
+(e.g. theme [`C4_united`](https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes/puml-theme-C4_united.puml)
 bases on the [`united`](https://raw.githubusercontent.com/plantuml/plantuml/master/themes/puml-theme-united.puml) theme
 and contains all additional required C4-PlantUML settings that it can be directly used in all C4-PlantUML diagrams).
 
 E.g. in order to invoke theme `C4_united` from a remote repository, you have to use the following directive:
 
 ```plantuml
-!theme C4_united from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_united from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 ```
 
 In order to invoke a local theme `C4_foo`, you have to use the following directive:
@@ -46,9 +46,9 @@ In order to invoke a local theme `C4_foo`, you have to use the following directi
 ```plantuml
 @startuml
 
-!theme C4_united from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_united from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
 
 Person(admin, "Administrator")
 System_Boundary(c1, "Sample System") {
@@ -71,20 +71,20 @@ SHOW_FLOATING_LEGEND()
 
 C4_blue theme is the original theme and need no activation.
 
-Theme [C4_blue](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes/puml-theme-C4_blue.puml) can be activated with
+Theme [C4_blue](https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes/puml-theme-C4_blue.puml) can be activated with
 
 ```plantuml
-!theme C4_blue from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_blue from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 ```
 
 ![](https://www.plantuml.com/plantuml/png/hO-noeD048Hxdq8VGBUn-Yj_99s150afmwaR5VRMutQEaBVFcMT8DSF0zy5q1XUHl1GLLlPSzkrZbCJbC-w-N85WVqJHlPfbmvh6P1odNS6APjez1N5wuBLXbcsalgqlntGx3-ITWIDzlLPKcqwIPlwDD6JYJLSs_8kSX3qhx9vj0o-iSnEEIrrkEJy0)
 
 ### C4_brown
 
-Theme [C4_brown](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes/puml-theme-C4_brown.puml) can be activated with
+Theme [C4_brown](https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes/puml-theme-C4_brown.puml) can be activated with
 
 ```plantuml
-!theme C4_brown from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_brown from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 ```
 
 ![](https://www.plantuml.com/plantuml/png/hOyn2eD044LxJw47q6ciKXaadO4K2Id3gXCLPcUNcLaajy-QCwJwdm_lmU_Kd5ZoL5IseiUoRr-ZX9tBjmHVhcPHJm3YzcRPR4rZKfGfi25RCmKFaHmVVAqsqpP2tzQtOtfS1_1E3GL-OYsgZITAC_v76ZFnWJkgdOakX3wp-ios0HVakOd7fowtd5y0)
@@ -92,50 +92,50 @@ Theme [C4_brown](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/m
 
 ### C4_green
 
-Theme [C4_green](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes/puml-theme-C4_green.puml) can be activated with
+Theme [C4_green](https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes/puml-theme-C4_green.puml) can be activated with
 
 ```plantuml
-!theme C4_green from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_green from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 ```
 
 ![](https://www.plantuml.com/plantuml/png/hO-noeD048Hxdq8VGBUn-Yj_99s150afmwaJ5VREOtUFaBVFcMT8DSF0zy5qQauiUIugM-5HzkrZ4I2KJzbzkPf5_ICIzsgMpTOq9eLCUp04QwRTKsGN3hvMctaRgM_hop7TpWDvfmQXhrYBQWiJfnc_aSPClEaAjN_c4yDdLk_PDc11c9juVEfoo_a1)
 
 ### C4_sandstone
 
-Theme [C4_sandstone](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes/puml-theme-C4_sandstone.puml) can be activated with
+Theme [C4_sandstone](https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes/puml-theme-C4_sandstone.puml) can be activated with
 
 ```plantuml
-!theme C4_sandstone from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_sandstone from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 ```
 
 ![](https://www.plantuml.com/plantuml/png/hS-noeD03C3ntQVG1z0iJj_aXtIpqA6bOpczL8KaTrnobBvzppv3fuJ0_mSPr5oop5GrjY5ZFVOFTUBLWc3zJ87hpIpg7q1ohsxTRSjpLanB44EnRWaCaPmSHglcQPzXxDlBSRgT9s2dXWc-k5RDBWjbZxz1OodUS4MrVw8J8PTMxqMRS4NnNJp-6ifMvWS0)
 
 ### C4_superhero
 
-Theme [C4_superhero](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes/puml-theme-C4_superhero.puml) can be activated with
+Theme [C4_superhero](https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes/puml-theme-C4_superhero.puml) can be activated with
 
 ```plantuml
-!theme C4_superhero from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_superhero from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 ```
 
 ![](https://www.plantuml.com/plantuml/png/hS-noeD03C3ntQVG1z0iJj_aXtIpqA6bOparzOJaxaXobBvzppv3fuJ0_mSPr9nOPgeQyyXOZ_r3SqBnAB5-IkJQcoNz0n3twhRTV9wpeYmn60RhbiYGo8N3QDLMscSO-_Pod6xd2TYfeS0NrwhPmq9vnT-WgHHlkABQFz69a4khzw9Dk65OktJyDPIjp0y0)
 
 ### C4_united
 
-Theme [C4_united](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes/puml-theme-C4_united.puml) can be activated with
+Theme [C4_united](https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes/puml-theme-C4_united.puml) can be activated with
 
 ```plantuml
-!theme C4_united from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_united from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 ```
 
 ![](https://www.plantuml.com/plantuml/png/hSyngiCm3CRnFQT83f1eoVIcF4At53gqT2nEh2O6sJ7MPqflNwTdw2GX-Fz0Wy8aP2zLWuqzrsF_oC61RVrCkwyt8EeVKJAlRdNOyfoLqx87S42tx9wYc700hSAAcsdisyjnkfqdyaR1YRwoLeqBYsJBlq5ZATvqPSM_o4dObrRlHPjuvM2xU3mrbAtC3m00)
 
 ### C4_violet
 
-Theme [C4_violet](https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes/puml-theme-C4_violet.puml) can be activated with
+Theme [C4_violet](https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes/puml-theme-C4_violet.puml) can be activated with
 
 ```plantuml
-!theme C4_violet from https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/themes
+!theme C4_violet from https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/themes
 ```
 
 ![](https://www.plantuml.com/plantuml/png/hS_12i8m383X-vvYUu0jbvqyJOQt2HuKZz9jSIiaRMbInRUtzHay9GJ-3pA8cgY9gMfqHyPwx1ylwmcrVaRFzQuQv00GpRlRhEvfJe9nyKxHQRTuXa365Q0LNSdECFRjfPnkvmdOY6A4donLOzr2QSN_e24N7xYYw97eHCYvbNlM9jpGhLqeJmrvo_CB)
