@@ -14,8 +14,8 @@
 ' ##################################
 
 'new'
-!$testing_FONT_COLOR ?= "#00FF00"
-!$testing_BG_COLOR ?= "#a18da1"
+!$testing_FONT_COLOR ?= "#000000"
+!$testing_BG_COLOR ?= "#FFFFFF"
 !$testing_BORDER_COLOR ?= "#FFFFFF"
 
 !$COMPONENT_FONT_COLOR ?= "#000000"
