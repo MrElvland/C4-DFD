@@ -27,7 +27,7 @@ rectangle C4VersionDetailsArea <<legendArea>> [
 !$BOUNDARY_BORDER_STYLE ?= "dashed"
 
 !$LEGEND_TITLE_COLOR ?= "#000000"
-!$LEGEND_FONT_COLOR ?= "#FFFFFF"
+!$LEGEND_FONT_COLOR ?= "#FF0017"
 !$LEGEND_BG_COLOR ?= "transparent"
 !$LEGEND_BORDER_COLOR ?= "transparent"
 ' %darken(darkkhaki,50), #khaki
