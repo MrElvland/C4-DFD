@@ -2,7 +2,7 @@
 !if %variable_exists("RELATIVE_INCLUDE")
   !include ./C4_Context.puml
 !else
-  !include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Context.puml
+  !include https://raw.githubusercontent.com/MrElvland/C4-DFD/main/C4-PlantUML-master/C4_Context.puml
 !endif
 
 ' Scope: A single software system.
@@ -75,7 +75,7 @@ endlegend
 rectangle "$getContainer($label, $techn, $descr, $sprite)$getProps()" $toStereos("container", $tags) as $alias $getLink($link)
 !endprocedure
 
-!unquoted procedure testing($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
+!unquoted procedure Container($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
 !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "container")
 !$techn=$toElementArg($techn, $tags, "ElementTagTechn", "container")
 rectangle "$getContainer($label, $techn, $descr, $sprite)$getProps()" $toStereos("container", $tags) as $alias $getLink($link)

@@ -2,7 +2,7 @@
 !if %variable_exists("RELATIVE_INCLUDE")
   !include ./C4_Component.puml
 !else
-  !include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Component.puml
+  !include https://raw.githubusercontent.com/MrElvland/C4-DFD/main/C4-PlantUML-master/C4_Component.puml
 !endif
 
 ' Scope: Interactions in an enterprise, software system or container.
