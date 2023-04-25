@@ -2,7 +2,7 @@
 !if %variable_exists("RELATIVE_INCLUDE")
   !include ./C4_Container.puml
 !else
-  !include https://github.com/MrElvland/C4-DFD/blob/main/C4-PlantUML-master/C4_Container.puml
+  !include https://raw.githubusercontent.com/MrElvland/C4-DFD/main/C4-PlantUML-master/C4_Container.puml
 !endif
 
 ' Scope: A single container.
@@ -12,6 +12,11 @@
 
 ' Colors
 ' ##################################
+
+'new'
+!$DB_FONT_COLOR ?= "#000000"
+!$DB_BG_COLOR ?= "#FFFFFF"
+
 
 !$COMPONENT_FONT_COLOR ?= "#000000"
 !$COMPONENT_BG_COLOR ?= "#85BBF0"
@@ -23,6 +28,10 @@
 
 ' Styling
 ' ##################################
+
+'new'
+UpdateElementStyle("db", $DB_BG_COLOR, $DB_FONT_COLOR)
+
 
 UpdateElementStyle("component", $COMPONENT_BG_COLOR, $COMPONENT_FONT_COLOR, $COMPONENT_BORDER_COLOR)
 UpdateElementStyle("external_component", $EXTERNAL_COMPONENT_BG_COLOR, $EXTERNAL_COMPONENT_FONT_COLOR, $EXTERNAL_COMPONENT_BORDER_COLOR)
@@ -48,6 +57,9 @@ legend right
 |<$SYSTEM_BG_COLOR> system |
 |<$CONTAINER_BG_COLOR> container |
 |<$COMPONENT_BG_COLOR> component |
+'new'
+|<$DB_BG_COLOR> db |
+
 |<$EXTERNAL_PERSON_BG_COLOR> external person |
 |<$EXTERNAL_SYSTEM_BG_COLOR> external system |
 |<$EXTERNAL_CONTAINER_BG_COLOR> external container |
@@ -61,6 +73,14 @@ endlegend
 !function $getComponent($label, $techn, $descr, $sprite)
   !return $getElementBase($label, $techn, $descr, $sprite)
 !endfunction
+
+'new'
+!unquoted procedure Db($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg("u-2dBk1W81UCWb4m2aR1A1W5es0KZ8AXq3O3", $tags, "ElementTagSprite", "db")
+!$techn=$toElementArg($techn, $tags, "ElementTagTechn", "db")
+rectangle "$getComponent($label, $techn, $descr, $sprite)$getProps()" $toStereos("db",$tags) as $alias $getLink($link)
+!endprocedure
+
 
 !unquoted procedure Component($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
 !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "component")
