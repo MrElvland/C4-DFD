@@ -82,6 +82,7 @@ endlegend
 
 
 'new'
+'herman was here'
 !unquoted procedure Testing($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
 !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "component")
 !$techn=$toElementArg($techn, $tags, "ElementTagTechn", "component")
